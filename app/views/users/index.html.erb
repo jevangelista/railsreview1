@@ -1,0 +1,15 @@
+<h1>Welcome to the Users Index</h1>
+
+
+<div> 
+	There are currently <%= @users.length %> users.
+</div>
+
+<div>
+	<% @users.each do |user|%>
+		<h2> <%= user.email %> </h2>
+		<%= button_to "Delete", user, method: :delete %>
+	<% end %>
+
+
+</div>
