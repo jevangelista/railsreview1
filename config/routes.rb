@@ -22,6 +22,11 @@ Rails.application.routes.draw do
   post "/sessions", to: "sessions#create"
 
 
+  #articles routes
+  get "/articles", to: "articles#index", as: "articles"
+
+
+
 
 
 
